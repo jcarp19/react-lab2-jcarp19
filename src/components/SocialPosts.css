@@ -4,3 +4,24 @@
 .not-hidden {
     display: block;
 }
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Homemade Apple', sans-serif;
+    color:#03a9f4;
+}
+button {
+    background-color: #03a9f4;
+    border: 1px solid #222222;
+    border-radius: 7px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.postList-container {
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 7px;
+    padding: 1em 3em;
+    box-sizing: border-box;
+    margin-top: 1em;
+}

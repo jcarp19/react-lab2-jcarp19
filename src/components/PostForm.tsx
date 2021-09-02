@@ -22,6 +22,9 @@ export default function PostForm({
                 e.preventDefault();
                 onSubmit();
             }}>
+                <div className="close-icon">
+                    <i className="fas fa-times-circle"></i>
+                </div>
                 <div className="form__section">
                     <label htmlFor="title">Title
                         <input required aria-label="title" name="title" id="title" type="text" placeholder="Enter a title" 
@@ -31,7 +34,7 @@ export default function PostForm({
                         />
                     </label>
                 </div>
-                <div className="form__secction">
+                <div className="form__section">
                     <label htmlFor="thought">Thought
                         <textarea required rows={10} aria-label="thought" name="thought" id="thought" placeholder="Enter a thought"
                         onChange={(event) => {

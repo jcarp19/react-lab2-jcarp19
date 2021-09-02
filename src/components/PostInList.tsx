@@ -12,11 +12,15 @@ interface Props {
 export default function PostInList({post, onDelete}: Props) {
     return (
     <div className="single-post">
-       <h3>{post.title}</h3>
-       <p>{post.thought}</p>
-       <i className="fas fa-trash" onClick={() => {
-           onDelete();
-       }}></i>
+        <div className="post-content">
+            <h3>{post.title}</h3>
+            <p>{post.thought}</p>
+        </div>
+        <div>
+            <i className="fas fa-trash" onClick={() => {
+                onDelete();
+            }}></i>
+        </div>
     </div>
     )
 };

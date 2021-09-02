@@ -1,5 +1,16 @@
 .single-post {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+}
+.post-content {
+    max-width: 75%;
+}
+h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
 }

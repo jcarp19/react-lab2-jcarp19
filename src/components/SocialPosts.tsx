@@ -38,10 +38,9 @@ export default function SocialPosts() {
                 <h1>My Thoughts</h1>
             </header>
             <button onClick={visibility}>New Thought</button>
-            {/* <button onClick={() => {setHiddenClass("not-hidden")}}>New Thought</button> */}
             
             
-            <div >
+            <div className="postList-container">
             {posts.map((post, index) => (
                 <PostInList key={index} post={post} onDelete={() => {deletePost(index)}} />
             ))}
