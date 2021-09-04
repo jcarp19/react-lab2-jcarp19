@@ -1,8 +1,8 @@
 .hidden {
-    display: none;
+    display: none !important;
 }
 .not-hidden {
-    display: block;
+    display: flex;
 }
 header {
     display: flex;
@@ -16,6 +16,7 @@ button {
     border-radius: 7px;
     color: #ffffff;
     font-weight: 700;
+    cursor: pointer;
 }
 .postList-container {
     background-color: #ffffff;

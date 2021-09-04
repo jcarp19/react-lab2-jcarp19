@@ -13,17 +13,22 @@ export default function PostForm({
     onSubmit: () => void;
 }) {
     
+    const [closeTheForm, setCloseTheForm] = useState("not-hidden");
+    const closeForm = () => {
+        setCloseTheForm("hidden");
+    };
     
    
-    // const [hiddenClass, setHiddenClass] = useState("not-hidden");
     return (
-        <div className="modal">
-            <form onSubmit={(e) => {
+        <div className={`modal ${closeTheForm}`}>
+            <form className={closeTheForm} onSubmit={(e) => {
                 e.preventDefault();
                 onSubmit();
             }}>
                 <div className="close-icon">
-                    <i className="fas fa-times-circle"></i>
+                    <i className="fas fa-times-circle" onClick={() => {
+                        closeForm();
+                    }}></i>
                 </div>
                 <div className="form__section">
                     <label htmlFor="title">Title
